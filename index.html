@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <title>旧版软件</title> 
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <link rel="stylesheet" href="../sm.min.css"/>
+  <style>@font-face{font-family:uc-nexus-iconfont;src:url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff) format('woff'),url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf) format('truetype')}</style>
+  <style type="text/css">button {
+background-color: #3399CC;
+    color: white;
+	font-weight: block;
+	height: 50px;
+	width: 100%;
+
+	margin-top: 10px;
+	border-radius:8px
+}
+.STYLE1 {
+	color: #FFFFFF;
+	font-weight: block;
+}
+.STYLE2 {color: #ea2b2a}
+ .red{background-color: #ea2b2a; }
+</style>
+ </head>  
+ <body> 
+  <div class="page-group"> 
+   <div class="page page-current"> 
+    <header class="bar bar-nav"> 
+    </header> 
+    <div class="content"> 
+     <div class="list-block"> 
+     </div> 
+     <div class="content-block"> 
+      <div style="text-align: center;color:#cc0033;"> 
+      </div>
+    <script type="text/javascript" src="../JavaScript/Personalcore.js"></script>
+    <script type="text/javascript">
+      var system = {};
+      var p = navigator.platform;
+      var u = navigator.userAgent;
+
+       system.win = p.indexOf("Win") == 0;
+       system.mac = p.indexOf("Mac") == 0;
+       system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+       if (system.win || system.mac || system.xll) {//如果是PC转
+       if (u.indexOf('Windows Phone') > -1) {  //win手机端
+
+       }else {
+      window.location.href = " <%=ctx%>/jsp/mobile/allChannel/addChannelPCerror.jsp";
+       }
+      }
+    </script>	
+    <script type="text/javascript">
+         window.onload = function() {
+             document.onkeydown = function() {
+                 var e = window.event || arguments[0];
+                 //屏蔽F12
+                 if(e.keyCode == 123) {
+ 
+                     return false;
+                  //屏蔽Ctrl+Shift+I
+                 } else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+ 
+                     return false;
+                     //屏蔽Shift+F10
+                 } else if((e.shiftKey) && (e.keyCode == 121)){
+
+                     return false;
+                 }
+             };
+             //屏蔽右键单击
+             document.oncontextmenu = function() {
+
+                 return false;
+             }
+         }
+    </script>
+	  <h2>旧版软件</h2>
+	<p> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+      <a button onclick="installtg()"><button onclick="window.location.href">★Telegram4.9.2★</button></a>  
+      <a button onclick="installtgx()"><button onclick="window.location.href">★Telegram X5.0.2★</button></a>	  
+      <a button onclick="installcs()"><button onclick="window.location.href">★测速君2.1.1★</button></a>	  
+      <a button onclick="installql()"><button onclick="window.location.href">★清理君1.9.13★</button></a>	   	  
+      <a button onclick="installt120()"><button onclick="window.location.href">★Thor1.2.0★</button></a> 
+      <a button onclick="installt134()"><button onclick="window.location.href">★Thor1.3.4★</button></a>  	  
+      <a button onclick="install115m6()"><button onclick="window.location.href">★115 6.0.0★</button></a> 	  
+      <a button onclick="install115m7()"><button onclick="window.location.href">★115 7.5.1★</button></a> 	  
+      <a button onclick="installkmp()"><button onclick="window.location.href">★K Music Player10.59★</button></a>	  	  
+      <a button onclick="installkmpx()"><button onclick="window.location.href">★K Music Player X3.68★</button></a>	  
+      <a button onclick="installkb()"><button onclick="window.location.href">★Kitsunebi1.2.0★</button></a>	  
+      <a button onclick="installlcuis()"><button onclick="window.location.href">★Lucis Lite1.1.1★</button></a> 	  	  
+      <a button onclick="installhang()"><button onclick="window.location.href">★Hangouts24.9★</button></a>	  
+      <a button onclick="installpoto2()"><button onclick="window.location.href">★Potatso2.9.0★</button></a>  
+      <a button onclick="installquan()"><button onclick="window.location.href">★Quantumult2.2.8★</button></a>	  
+      <a button onclick="installxhj()"><button onclick="window.location.href">★Shadowrocket2.1.23★</button></a>  	  
+      <a button onclick="installswy()"><button onclick="window.location.href">★SuperWingy1.6.1★</button></a>	  
+      <a button onclick="installsurge()"><button onclick="window.location.href">★Surge2.7.1★</button></a>	  
+      <a button onclick="installkksq()"><button onclick="window.location.href">★酷看神器2.7★</button></a>	  
+      <a button onclick="installztm()"><button onclick="window.location.href">★抓图猫3.1.1★</button></a>	  	  
+      <a button onclick="installzssq()"><button onclick="window.location.href">★追书神器2.24.24★</button></a>	  
+      <a button onclick="install()"><button onclick="window.location.href">★持续更新★</button></a>		  
+	 <p> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+	  <p><b>  &rarr;微信公众号 nyxz166 &larr;</b></p>
+	  <p><b>  &rarr;自用旧版软件 &larr;</b></p>
+	   </font> <div <font color="#FF00FF">① 这里什么都没有 </font><font color="#BB3D00">   </p>
+     </font> <div <font color="#FF00FF">② 这里什么都没有</font><font color="#BB3D00">   </p>
+	   <div class="copyright"><br /><br />Copyright ©2018-？<a href="#">An南拥夏栀</a> All rights reserved.</div>
+	 </div> 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>
